@@ -3,4 +3,18 @@
 #  -default <ip:port>           required
 #  -route <prefix=ip:port>,...  default empty
 #  -allow-transfer <ip>,...     default empty
-DAEMON_ARGS=""
+DAEMON_ARGS="
+    -default 9.9.9.9:53 \
+    -route .ftw=127.0.0.1:5335 \
+    -route .ness=127.0.0.1:5335 \
+    -route .sky=127.0.0.1:5335 \
+    -route .mdl=127.0.0.1:5335 \
+    -route .coin=127.0.0.1:5335 \
+    -route .lib=127.0.0.1:5335 \
+    -route .emc=127.0.0.1:5335 \
+    -route .bazar=127.0.0.1:5335 \
+    -route .i2p=127.0.0.1:5335 \
+    -route .ygg=127.0.0.1:5335 \
+    -route .xmr=127.0.0.1:5335 \
+    -route .aix=127.0.0.1:5335" \
+    -route .lbrty=127.0.0.1:5335"
